@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Formulaire</title>
+</head>
+
+<body>
+    <h1>. Registration Form .</h1>
+    <input action="/html/retourform.html" method="get">
+    <label for="Nom">Nom</label>
+    <input type="text" id="Name" name="name" required minlength="3" maxlength="12" size="14">
+    <br>
+    <label for="Prénom">Prénom</label>
+    <input type="text" id="name" name="Prénom" required minlength="3" maxlength="12" size="14">
+    <br>
+    <label for="Email">E-mail</label>
+    <input type="text" id="email" name="email" required placeholder="xxxx@yyy.zzz" minlength="3" maxlength="12"
+        size="14">
+    <br>
+    <label for="Pays">Pays</label>
+    <select name="Pays" id="Pays">
+
+        <option value="fr">France</option>
+        <option value="other">Autre</option>
+
+    </select>
+
+    <input type="submit" value="S'inscrire">
+    </form>
+</body>
+
+</html>
