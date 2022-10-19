@@ -10,26 +10,42 @@
 
 <body>
     <h1>. Registration Form .</h1>
-    <input action="/html/retourform.html" method="get">
-    <label for="Nom">Nom</label>
-    <input type="text" id="Name" name="name" required minlength="3" maxlength="12" size="14">
-    <br>
-    <label for="Prénom">Prénom</label>
-    <input type="text" id="name" name="Prénom" required minlength="3" maxlength="12" size="14">
-    <br>
-    <label for="Email">E-mail</label>
-    <input type="text" id="email" name="email" required placeholder="xxxx@yyy.zzz" minlength="3" maxlength="12"
-        size="14">
-    <br>
-    <label for="Pays">Pays</label>
-    <select name="Pays" id="Pays">
-
-        <option value="fr">France</option>
-        <option value="other">Autre</option>
-
-    </select>
-
-    <input type="submit" value="S'inscrire">
+    <form action="/html/retourform.html" method="get">
+        <label for="Nom">Nom</label>
+        <input type="text" id="Name" name="name" required minlength="3" maxlength="12" size="14" style="margin:10px;">
+        <br>
+        <label for="Prénom">Prénom</label>
+        <input type="text" id="name" name="Prénom" required minlength="3" maxlength="12" size="14" style="margin:10px;">
+        <br>
+        <label for="dob">Date de naissance</label>
+        <input type="date" id="dob" name="dob" required minlength="3" maxlength="12" size="14" style="margin:10px;">
+        <br>
+        <input type="radio" id="genre1" name="genre" style="margin:10px;" checked>
+        <label for="genre1">Homme</label>
+        <input type="radio" id="genre2" name="genre" style="margin:10px;">
+        <label for="genre2">Femme</label>
+        <input type="radio" id="genre3" name="genre" style="margin:10px;">
+        <label for="genre3">Autre</label>
+        <br>
+        <label for="Email">E-mail</label>
+        <input type="text" id="email" name="email" required placeholder="xxxx@yyy.zzz" minlength="3" maxlength="12" size="14" style="margin:10px;">
+        <br>
+        <label for="password">Mot de Passe</label>
+        <input type="password" id="password" name="password" required minlength="3" maxlength="12" size="14" style="margin:10px;">
+        <br>
+        <label for="Pays">Pays</label>
+        <select name="Pays" id="Pays" style="margin:10px;">
+            <option value="fr">France</option>
+            <option value="other">Autre</option>
+        </select>
+        <br>
+        <label for="Tel">Téléphone</label>
+        <input type="tel" id="Tel" name="Tel" required placeholder="0033 06 12 34 56 78" minlength="3" maxlength="12" size="14" style="margin:10px;">
+        <br>
+        <input type="checkbox" id="conditions" name="conditions" required style="margin:10px;">
+        <label for="conditions">J'accepte les Conditions générales.</label>
+        <br>
+        <input type="submit" value="S'inscrire" style="margin:10px;">
     </form>
 </body>
 
