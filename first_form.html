@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premier Formulaire</title>
+    <link rel="Stylesheet" href="Stylesheet.css">
+    <title>Tomato Lovers</title>
 </head>
 
 <body>
@@ -28,10 +29,12 @@
         <label for="genre3">Autre</label>
         <br>
         <label for="Email">E-mail</label>
-        <input type="text" id="email" name="email" required placeholder="xxxx@yyy.zzz" minlength="3" maxlength="12" size="14" style="margin:10px;">
+        <input type="text" id="email" name="email" required placeholder="xxx@yyy.zzz" minlength="3" maxlength="12"
+            size="14" style="margin:10px;">
         <br>
         <label for="password">Mot de Passe</label>
-        <input type="password" id="password" name="password" required minlength="3" maxlength="12" size="14" style="margin:10px;">
+        <input type="password" id="password" name="password" required minlength="3" maxlength="12" size="14"
+            style="margin:10px;">
         <br>
         <label for="Pays">Pays</label>
         <select name="Pays" id="Pays" style="margin:10px;">
@@ -40,7 +43,7 @@
         </select>
         <br>
         <label for="Tel">Téléphone</label>
-        <input type="tel" id="Tel" name="Tel" required placeholder="0033 06 12 34 56 78" minlength="3" maxlength="12" size="14" style="margin:10px;">
+        <input type="tel" id="Tel" name="Tel" required placeholder="0612345678" pattern="[0]{1}[0-9]{9}" size="14" style="margin:10px;">
         <br>
         <input type="checkbox" id="conditions" name="conditions" required style="margin:10px;">
         <label for="conditions">J'accepte les Conditions générales.</label>
@@ -48,5 +51,4 @@
         <input type="submit" value="S'inscrire" style="margin:10px;">
     </form>
 </body>
-
 </html>
